@@ -5,10 +5,128 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles.css">
         <link rel="icon" type="image/ico" href="./assets/favicon.f83afbda6c78.ico">
+        <script src="https://kit.fontawesome.com/e06cbe8ac9.js" crossorigin="anonymous"></script>
         <title>ABLETON | ABOUT</title>
     </head>
     <body>
-        
+        <div class="desktop-nav">
+            <nav class="primary-nav">
+                <a href="" aria-label="home">
+                    <img src="./assets/logo-image.svg" alt="ableton logo">
+                </a>
+                <ul>
+                    <li><a href="" aria-label="live">Live</a></li>
+                    <li><a href="" aria-label="push">Push</a></li>
+                    <li><a href="" aria-label="note">Note</a></li>
+                    <li><a href="" aria-label="link">Link</a></li>
+                    <li><a href="" aria-label="shop">Shop</a></li>
+                    <li><a href="" aria-label="packs">Packs</a></li>
+                    <li><a href="" aria-label="help">Help</a></li>
+                    <li><a href="" aria-label="more" id="more">More  
+                        <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-minus"></i>
+                    </a></li>
+                </ul>
+                <ul class="float-right">
+                    <li><a href="" aria-label="try live">Try Live for Free</a></li>
+                    <li><a href="" aria-label="login/register">Login or register</a></li>
+                </ul>
+            </nav>
+            <div class="more-links">
+                <div class="more-1">
+                    <h4>More on Ableton.com:</h4>
+                    <p>Blog</p>
+                    <p>Ableton for the Classroom</p>
+                    <p>Ableton for Colleges and Universities</p>
+                    <p>Certified Training</p>
+                    <p>About Ableton</p>
+                    <p>Jobs</p>
+                    <p>Apprenticeships</p>
+                </div>
+                <div class="more-2">
+                    <h4>More from Ableton:</h4>
+                    <div>
+                        <section>
+                            <h5>Loop</h5>
+                            <p>Watch Talks, Performances and Features from Ableton's Summit for Music Makers</p>
+                        </section>
+                        <section>
+                            <h5>Learning Music</h5>
+                            <p>Learn the fundamentals of music making right in your browser.</p>
+                        </section>
+                        <section>
+                            <h5>Learning Synths</h5>
+                            <p>Get started with synthesis using a web-based synth and accompanying lessons.</p>
+                        </section>
+                        <section>
+                            <h5>Making Music</h5>
+                            <p>Some tips from 74 Creative Strategies for Electronic Producers.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav">
+            <div class="primary-nav">
+                <a href="" aria-label="home">
+                    <img src="./assets/logo-image.svg" alt="ableton logo">
+                </a>
+                <div class="menu-button mnu-tgl1">Menu <i class="fa-solid fa-caret-down"></i></div>
+            </div>
+        </div>
+        <nav class="secondary-nav">
+            <ul>
+                <li><a href="#" aria-label="about">About</a></li>
+                <li><a href="" aria-label="Jobs">Jobs</a></li>
+                <li><a href="" aria-label="Apprenticeships">Apprenticeships</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown-menu">
+            <div class="primary-nav">
+                <a href="" aria-label="home">
+                    <img src="./assets/logo-image-white.svg" alt="ableton logo">
+                </a>
+                <div class="menu-button mnu-tgl2">Menu <i class="fa-solid fa-caret-up"></i></div>
+            </div>
+            <ul>
+                <li>Live</li>
+                <li>Push</li>
+                <li>Note</li>
+                <li>Link</li>
+                <li>Shop</li>
+                <li>Packs</li>
+                <li>Help</li>
+                <li>Try Live For Free</li>
+                <li><p>Login or register</p></li>
+                <li>More on Ableton.com:</li>
+                <li><p>Blog</p></li>
+                <li><p>Ableton for the Classroom</p></li>
+                <li><p>Ableton for Colleges and Universities</p></li>
+                <li><p>Certified Training</p></li>
+                <li><p class="orange-text">About Ableton</p></li>
+                <li><p>Jobs</p></li>
+                <li><p>Apprenticeships</p></li>
+                <li>More from Ableton:</li>
+                <li class="scrollable">
+                    <section>
+                        <h6>Loop</h6>
+                        <p>Watsh Talks, Performances and Features from Ableton's Summit for Music Makers</p>
+                    </section>
+                    <section>
+                        <h6>Learning Music</h6>
+                        <p>Learn the fundamentals of music making right in your browser.</p>
+                    </section>
+                    <section>
+                        <h6>Learning Synths</h6>
+                        <p>Get started with synthesis using a web-based synth and accompanying lessons.</p>
+                    </section>
+                    <section>
+                        <h6>Making Music</h6>
+                        <p>Some tips from 74 Creative Strategies for Electronic Producers.</p>
+                    </section>
+                </li>
+            </ul>
+        </div>
+
         <script type="module" src="./app.js"></script>
     </body>
 </html>
