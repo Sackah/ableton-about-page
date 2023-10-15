@@ -8,6 +8,7 @@ const menutogle1 = document.querySelector('.mnu-tgl1');
 const menutogle2 = document.querySelector('.mnu-tgl2');
 minusButton.style.display = 'none';
 moreLinks.style.display = 'none';
+dropdownMenu.style.display = 'none';
 moreButton.addEventListener('click', (e) => {
     e.preventDefault();
     if (minusButton.style.display === 'none') {
@@ -23,9 +24,11 @@ moreButton.addEventListener('click', (e) => {
 });
 menutogle1.addEventListener('click', (e) => {
     e.preventDefault();
+    dropdownMenu.style.display = 'block';
     dropdownMenu.classList.remove('hide');
 });
 menutogle2.addEventListener('click', (e) => {
     e.preventDefault();
+    dropdownMenu.style.display = 'none';
     dropdownMenu.classList.add('hide');
 });

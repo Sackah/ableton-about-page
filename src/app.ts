@@ -8,6 +8,7 @@ const menutogle2 = document.querySelector('.mnu-tgl2') as HTMLElement;
 
 minusButton.style.display = 'none';
 moreLinks.style.display = 'none';
+dropdownMenu.style.display = 'none';
 
 moreButton.addEventListener('click', (e: Event) => {
     e.preventDefault();
@@ -25,11 +26,13 @@ moreButton.addEventListener('click', (e: Event) => {
 
 menutogle1.addEventListener('click', (e: Event) => {
     e.preventDefault();
+    dropdownMenu.style.display = 'block';
     dropdownMenu.classList.remove('hide');
 })
 
 menutogle2.addEventListener('click', (e: Event) => {
     e.preventDefault();
+    dropdownMenu.style.display = 'none';
     dropdownMenu.classList.add('hide');
 })
 
