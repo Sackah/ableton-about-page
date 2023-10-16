@@ -4,7 +4,7 @@
 }
 :root{
     --font-set1 : 'Cabin', sans-serif;
-    --main-biege: #fbffa7;
+    --main-lemon: #fbffa7;
     --main-blue: #0000ff;
     --main-green: #b6ffc0;
     --main-orange: #ff764d;
@@ -42,7 +42,7 @@ ul{
     width: 3.75em;
     height: 1.75em;
 }
-ul li{
+.primary-nav ul li, .secondary-nav ul li{
     margin-left: 15px;
     padding: 10px;
 }
@@ -194,9 +194,25 @@ h6{
     .menu-button{
         margin-left: 20px;
     }
-    ul li{
+    .dropdown-menu ul li{
         margin-left: 8px;
         padding: 4px;
+    }
+    .secondary-nav ul li{
+        margin-left: 4px;
+    }
+}
+/* Nesthub */
+@media (max-width: 1025px) and (min-width: 1005px){
+    .primary-nav{
+        font-size: 1em;
+    }
+    .primary-nav ul li, .secondary-nav ul li{
+        margin-left: 6px;
+        padding: 10px;
+    }
+    .primary-nav ul{
+        padding-left: 7px;
     }
 }
 /* div {
