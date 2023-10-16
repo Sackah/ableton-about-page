@@ -33,7 +33,7 @@ main section h1{
     line-height: 1.7em;
 }
 main section p{
-    font-size: 1.06em;
+    font-size: 1.07em;
     line-height: 1.7em;
 }
 main section a{
@@ -45,11 +45,6 @@ main section a{
     grid-template-rows: repeat(7, 1fr);
     width: 100%;
     height: 58vw;
-}
-.white-bg{
-    grid-column: 1 / 6;
-    grid-row: 1 / 8;
-    background-color: #fff;
 }
 .lemon-bg{
     grid-column: 6 / 13;
@@ -70,6 +65,53 @@ main section a{
     background-size: cover;
     background-position: center;
 }
+.juanpe{
+    margin-left: 25%;
+}
+.juanpe-img{
+    width: 720px;
+    height: 405px;
+    background-image: url('./assets/poster-juanpe.webp');
+    background-size: cover;
+    background-position: center;
+}
+.juanpe p{
+    padding-left: 10px;
+    font-size: 0.9em;
+}
+.collage-2-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    width: 100%;
+    height: 75vw;
+}
+.greenbg{
+    background-color: var(--main-green);
+    grid-column: 1 / 8;
+    grid-row: 1 / 10;
+}
+.clg2-img1{
+    grid-column: 2 / 6;
+    grid-row: 2 / 5;
+    background-image: url('./assets/collage2-photo-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.clg2-img2{
+    grid-column: 2 / 6;
+    grid-row: 6 / 9;
+    background-image: url('./assets/collage2-photo-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.clg2-img3{
+    grid-column: 7 / 12;
+    grid-row: 3 / 8;
+    background-image: url('./assets/collage2-photo-3.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 @media only screen and (max-width: 1000px){
     header{
@@ -84,6 +126,16 @@ main section a{
         width: 80%;
         margin-top: 50px;
     }
+    .juanpe{
+        margin: 0 auto;
+    }
+    .juanpe-img{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .juanpe p{
+        padding-left: 8.5%;
+    } 
 }
 @media only screen and (max-width: 600px){
     main section{
@@ -98,10 +150,27 @@ main section a{
         font-size: 1em;
         line-height: 1.7em;
     }
+    .juanpe-img{
+        width: 85%;
+        height: 200px;
+        margin: 0 auto;
+    } 
+    .juanpe p{
+        padding-left: 8.5%;
+    }
 }
 /* Nest hub */
 @media (max-width: 1025px) and (min-width: 1005px){
     header{
         width: 900px;
+    }
+    .juanpe{
+        margin: 0 auto;
+    }
+    .juanpe-img{
+        margin: 0 auto;
+    }
+    .juanpe p{
+        margin-left: 15%;
     }
 }
