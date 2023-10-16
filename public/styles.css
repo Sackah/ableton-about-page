@@ -120,6 +120,7 @@ h5{
     transform-origin: top;
     animation: dropDown 0.5s ease-in-out;
     transform: translateY(0%);
+    display: none;
 }
 .dropdown-menu ul{
     display: block;
@@ -128,15 +129,17 @@ h5{
     padding-right: 10px;
 }
 .dropdown-menu ul li{
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin: 20px 10px;
 }
 .dropdown-menu ul li p{
-    font-size: 0.7em;
+    font-size: 0.6em;
     padding: 0;
     margin: 0;
 }
 h6{
+    font-size: 0.8em;
+    font-weight: 400;
     margin: 10px 0;
 }
 .scrollable{
@@ -203,17 +206,4 @@ h6{
   width: 100%;
   height: 400px; /* or whatever height you want 
 }
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1;
-  transform-origin: top;
-  transform: scaleY(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  transform: scaleY(1);
-}*/
+*/
