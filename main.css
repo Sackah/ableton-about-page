@@ -414,6 +414,9 @@ select{
         gap: 50px !important;
         margin-bottom: 10vw;
     }
+    .social-icons{
+        width: 60%;
+    }
     .social-icon{
         width: 32px;
         height: 32px;
@@ -423,6 +426,9 @@ select{
     }
     button{
         width: 24%;
+    }
+    input, button{
+        font-size: 1em;
     }
 }
 /* Nest hub */
