@@ -246,6 +246,7 @@ footer{
 .social-icon{
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 input, select{
     background-color: #eee !important;
@@ -286,6 +287,34 @@ select{
 }
 #location{
     width: 65%;
+}
+.footer-info{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8vw;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info p{
+    margin-right: 12px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.logo-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo-text p{
+    margin-right: 12px;
+    font-size: 0.9em;
 }
 
 @media only screen and (max-width: 1000px){
@@ -346,6 +375,7 @@ select{
         grid-template-rows: repeat(5, 1fr);
         grid-row-gap: 50px;
         grid-column-gap: 0;
+        margin-bottom: 0;
     }
     .sign-up{
         grid-column: 1 / 3;
@@ -370,6 +400,26 @@ select{
     .social-icon{
         width: 36px;
         height: 36px;
+    }
+    .footer-info{
+        width: 85%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: -5vw;
+    }
+    .info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .info p{
+        margin: 7px 0;
+    }
+    .logo-text{
+        flex-direction: row-reverse;
+        margin-top: 8vw;
+    }
+    .logo-text p{
+        margin-left: 12px;
     }
 }
 @media only screen and (max-width: 600px){
@@ -412,7 +462,6 @@ select{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
         gap: 50px !important;
-        margin-bottom: 10vw;
     }
     .social-icons{
         width: 60%;
@@ -429,6 +478,9 @@ select{
     }
     input, button{
         font-size: 1em;
+    }
+    .footer-info{
+        margin-top: -15vw;
     }
 }
 /* Nest hub */
